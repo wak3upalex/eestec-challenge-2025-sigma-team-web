@@ -4,28 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frosted Glass Animation</title>
-    <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-            background-color: #012C47;
-        }
-
-        #noiseCanvas {
-            display: block;
-        }
-
-        .frosted-glass {
-            position: fixed; /* Ensures it always stays in place relative to the viewport */
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0; /* Covers the entire viewport */
-            backdrop-filter: blur(90px) brightness(0.9); /* Frosted glass effect */
-            background-color: rgba(255, 255, 255, 0.0); /* Slight white tint */
-            pointer-events: none; /* Allows clicks to pass through */
-        }
-    </style>
+    <link href="css/background.css" rel="stylesheet">
 </head>
 <body>
     <canvas id="noiseCanvas"></canvas>
