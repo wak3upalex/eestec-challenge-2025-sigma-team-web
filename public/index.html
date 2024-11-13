@@ -4,184 +4,255 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="author" content="IT Sigma">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Product example · Bootstrap v5.1</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/product/">
-
-    
-
+    <title>EESTech Challenge</title>
+    <!-- Подключение bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Выгрузка шрифта-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Bootstrap core CSS -->
-<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Подключение своих стилей -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>  
+    <nav class="navbar navbar-expand d-flex justify-content-around  sticky-top">
+      <a class="py-3 logo" href="#" aria-label="EC Logo">
+        <img src="./img/EC Logo.svg" alt="EC Logo">
+      </a>
+      <ul class="navbar-nav d-flex align-items-center gap-4">
+        <!-- Для ссылок не забудьте hover прописать и active -->
+        <li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">О хакатоне</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Тематика этого года</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Организаторы</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Партнеры</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">ЧаВо</a></li>
+      </ul>
+    </nav>
+
+    <header class="container position-relactive">
+      <img src="./img/daimond.svg" class="daimond overflow-x-hidden position-absolute  start-0" alt="#" style="transform: rotate(-15deg); width: 310px;">
+      <img src="./img/daimond.svg" class="daimond overflow-x-hidden  position-absolute end-0 " alt="#" style="transform: rotate(15deg); width: 355px;">
+      <h1 class="text-center"><span>#</span>ReadyForThe<span>Challange?</span></h1>
+      <div>
+        <p class="text-center">Регистрируйся на локальный раунд хакатона <b>EESTech Challenge</b><br> и прими участие <b>в крупнейшем соревновании для<br>студентов-инженеров в Европе!</b></p>
+        <div class="d-flex justify-content-center">
+          <button class="btn btn-primary">Регистрация<img src="./img/arrow.svg"></img></button>
+        </div>
+      </div>
+      <div>
+        <div class="lower d-flex justify-content-center">
+          <div class="lower_item d-flex flex-column">
+            <h3 class="text-center">200k</h3>
+            <p>Призовой фонд</p>
+          </div>
+          <div class="lower_item d-flex flex-column">
+            <h3 class="text-center">200+</h3>
+            <p>Участников в прошлом году</p>
+          </div>
+          <div class="lower_item d-flex flex-column">
+            <h3 class="text-center">20+</h3>
+            <p>Команд в прошлом году</p>
+          </div>
+          <div class="lower_item d-flex flex-column">
+            <h3 class="text-center">4</h3>
+            <p>Года проводится хакатон</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Секция о хакатоне -->
+      <section>
+        <img src="./img/daimond.svg" alt="#" class=" daimond position-absolute end-0" style="transform: rotate(15deg); width: 695px;">
+        <div class="container">
+          <h2 class="text-start">Про <span>EESTech Challenge</span></h2>
+          <!-- Прописть width блока с текстом фиксит все -->
+          <p class="text-start" >EESTech Challenge или EESTEC Technology Challenge — это ежегодные международные студенческие соревнования, организуемые EESTEC. Его цель – создать возможности для европейских студентов получить знания и практический опыт в области электротехники и информатики, а также развивать профессиональные сети. Тема конкурса EESTech Challenge меняется каждый год и раскрывается на церемонии открытия. Конкурс разделен на несколько локальных раундов, которые организуются различными комитетами EESTEC по всей Европе. Команда-победитель каждого локального раунда затем переходит в финальный раунд! Конкурс завершается церемонией закрытия.</p>
+        </div>
+      </section>
+      <!-- Тема хакатона -->
+        <section>
+          <img src="./img/daimond.svg" alt="#" class="overflow-x-hidden daimond position-absolute" style="transform: rotate(-15deg); width: 695px;">
+          <div class="container">
+            <h2 class="text-end ms-auto me-0">Тематика этого года -<span> Electrical Circuit for Industry 4.0</span></h2>
+            <p class="text-end ms-auto me-0">EESTech Challenge или EESTEC Technology Challenge — это ежегодные международные студенческие соревнования, организуемые EESTEC. Его цель – создать возможности для европейских студентов получить знания и практический опыт в области электротехники и информатики, а также развивать профессиональные сети. Тема конкурса EESTech Challenge меняется каждый год и раскрывается на церемонии открытия. </p>
+            <button class="btn btn-primary me-0 ms-auto d-block">Подробнее<img src="./img/arrow.svg" alt="#"></img></button>
+          </div>
+        </section>
+      <!-- Секция организаторы -->
+      <section class="container-md p-1">
+        <h2 class="text-center">Организаторы</h2>
+        <div class="d-flex justify-content-center flex-wrap">
+          <img src="./img/Rectangle 60.png" alt=""><img src="./img/Rectangle 60.png" alt="#"><img src="./img/Rectangle 60.png" alt="#">
+        </div>
+        <p class="text-center">Electrical Engineering STudents' European assoCiation — это международная организация, находящаяся в более чем 20 городах Европы! EESTEC объединяет в себе студентов-энергетиков и программистов, а сообщество в Санкт-Петербурге ему с этим помогает</p>
+      </section>
+      <!-- Секция партнеры -->
+      <section class="container">
+        <h2 class="text-center">Партнеры</h2>
+        <div class="partners d-flex flex-column">
+          <div class="partner d-flex align-items-center">
+            <img src="./img/partner.svg" alt="">
+            <p class="text-start "><span>Lorem ipsum </span>– dolor sit amet, consectetur adipiscing elit. Mauris fermentum nunc a purus pulvinar, sit amet efficitur erat consequat. Nam sed enim non metus iaculis blandit. </p>
+          </div>
+          <div class="partner d-flex flex-row-reverse align-items-center">
+            <img src="./img/partner.svg" alt="">
+            <p class="text-start "><span>Lorem ipsum </span>– dolor sit amet, consectetur adipiscing elit. Mauris fermentum nunc a purus pulvinar, sit amet efficitur erat consequat. Nam sed enim non metus iaculis blandit. </p>
+          </div>
+          <div class="partner d-flex align-items-center">
+            <img src="./img/partner.svg" alt="">
+            <p class="text-start "><span>Lorem ipsum </span>– dolor sit amet, consectetur adipiscing elit. Mauris fermentum nunc a purus pulvinar, sit amet efficitur erat consequat. Nam sed enim non metus iaculis blandit. </p>
+          </div>
+        </div>
+      </section>
+      <!-- СЕКЦИЯ ЧаВО -->
+      <section class="container">
+        <h2><span>Ча</span>сто задаваемые <span>во</span>просы</h2>
+        <div class="faq d-flex flex-wrap flex-row w-100" >
+          <div class="first_faq d-flex flex-wrap flex-column" style="flex: 1 1 50%">
+            <div class="faq_item px-4">
+              <a class="d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+                Как будет проходить хакатон<p>+</p>
+              </a>
+              <div class="collapse" id="collapseExample1">
+                24 часов ты пишешь код, работаешь в команде единомышленников, общаясь с потенциальными работодателями из ІТ компаний-партнеров.
+              </div>
+            </div>
+            <div class="faq_item px-4">
+              <a class="d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                Предоставляете ли вы оборудование?<p>+</p>
+              </a>
+              <div class="collapse" id="collapseExample2">
+                Оборудование мы не предоставляем. Но надеемся, что у всех будет возможность использовать использовать личные ноутбуки.              </div>
+            </div>
+            <div class="faq_item px-4">
+              <a class="d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+                Я могу участвовать один?<p>+</p>
+              </a>
+              <div class="collapse" id="collapseExample3">
+                24 часов ты пишешь код, работаешь в команде единомышленников, общаясь с потенциальными работодателями из ІТ компаний-партнеров.
+              </div>
+            </div>
+          </div>
+          <div class="second_faq d-flex flex-wrap flex-column" style="flex: 1 1 50%">
+            <div class="faq_item px-4">
+              <a class="d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+                Где посмотреть отборочные задания?<p>+</p>
+              </a>
+              <div class="collapse" id="collapseExample4">
+                Отборочное задание появится 9.11 после регистрации на сайте и заполнения заявки.
+              </div>
+            </div>
+            <div class="faq_item px-4">
+              <a class="d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
+                Сколько стоит участие?<p>+</p>
+              </a>
+              <div class="collapse" id="collapseExample5">
+                Участие в Хакатоне абсолютно бесплатно для всех.
+              </div>
+            </div>
+            <div class="faq_item px-4">
+              <a class="d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6">
+                Будут ли призы?<p>+</p>
+              </a>
+              <div class="collapse" id="collapseExample6">
+                24 часов ты пишешь код, работаешь в команде единомышленников, общаясь с потенциальными работодателями из ІТ компаний-партнеров.
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer class="container d-flex flex-column">
+      <a href="#" class="text-center">
+        <img src="./img/EC logo footer.png" alt="#" style="object-fit: contain; height: 235px;">
+      </a>
+      <div class="footer_info d-flex flex-column">
+        <nav class="navbar navbar-expand d-flex justify-content-around">
+          <ul class="navbar-nav d-flex align-items-center gap-4">
+            <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">О хакатоне</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Тематика этого года</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Организаторы</a></li>
+          </ul>
+        </nav>
+        <div class="social mx-auto my-0">
+          <a href="#"><img src="./img/tg.svg" alt="#"></a>
+          <a href="#"><img src="./img/vk.svg" alt="#"></a>
+          <a href="#"><img src="./img/email.svg" alt="#"></a>
+        </div>
+        <p class="text-center">© 2024 EESTEC LC St. Petersburg</p>
+      </div>
+    </footer>
 
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+      /* Объявление переменных */
+      :root {
+        --bs-body-bg: #113B60;
+        --bs-secondary-color: #ECF7FD;
       }
 
+      a {
+        text-decoration: none;
+      }
+
+      /* 2 типа контейнеров в шаблоне */
+      .container {
+        max-width: 1475px;
+      }
+      .container-md {
+        max-width: 1720px;
+      }
+      /* Делаем чтоб картинки не ломались */
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Стилизация текста */
+      h1, h2, h3, h4, h5, h6, p, a, div {
+        font-family: Roboto Condensed !important;
+        color: var(--bs-secondary-color) !important;
+      }
+      /* Стилизация навигационного */
+      .sticky-top {
+        background-color: var(--bs-body-bg);
+        border-bottom: 4px solid #0E83D7;
+        padding: 0;
+      }
+      /* Медиазапросы */
       @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+        .flex-md-equal > * {
+          flex: 1 !important;
         }
       }
+
+      @media (max-width: 878px) {
+        .navbar-nav {
+          display: none !important;
+        }
+        .partner{
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .faq {
+          flex-direction: column !important;
+        }
+        .daimond {
+          display: none;
+        }
+      }
+
     </style>
 
-    
-    <!-- Custom styles for this template -->
-    <link href="css/product.css" rel="stylesheet">
-  </head>
-  <body>
-    
-<header class="site-header sticky-top py-1">
-  <nav class="container d-flex flex-column flex-md-row justify-content-between">
-    <a class="py-2" href="#" aria-label="Product">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
-    </a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Tour</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Product</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Features</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Enterprise</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Cart</a>
-  </nav>
-</header>
-
-<main>
-  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-    <div class="col-md-5 p-lg-5 mx-auto my-5">
-      <h1 class="display-4 fw-normal">Punny headline</h1>
-      <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
-      <a class="btn btn-outline-secondary" href="#">Coming soon</a>
-    </div>
-    <div class="product-device shadow-sm d-none d-md-block"></div>
-    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-  </div>
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-  </div>
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-  </div>
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-  </div>
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-  </div>
-</main>
-
-<footer class="container py-5">
-  <div class="row">
-    <div class="col-12 col-md">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
-      <small class="d-block mb-3 text-muted">&copy; 2017–2021</small>
-    </div>
-    <div class="col-6 col-md">
-      <h5>Features</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="link-secondary" href="#">Cool stuff</a></li>
-        <li><a class="link-secondary" href="#">Random feature</a></li>
-        <li><a class="link-secondary" href="#">Team feature</a></li>
-        <li><a class="link-secondary" href="#">Stuff for developers</a></li>
-        <li><a class="link-secondary" href="#">Another one</a></li>
-        <li><a class="link-secondary" href="#">Last time</a></li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>Resources</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="link-secondary" href="#">Resource name</a></li>
-        <li><a class="link-secondary" href="#">Resource</a></li>
-        <li><a class="link-secondary" href="#">Another resource</a></li>
-        <li><a class="link-secondary" href="#">Final resource</a></li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>Resources</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="link-secondary" href="#">Business</a></li>
-        <li><a class="link-secondary" href="#">Education</a></li>
-        <li><a class="link-secondary" href="#">Government</a></li>
-        <li><a class="link-secondary" href="#">Gaming</a></li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>About</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="link-secondary" href="#">Team</a></li>
-        <li><a class="link-secondary" href="#">Locations</a></li>
-        <li><a class="link-secondary" href="#">Privacy</a></li>
-        <li><a class="link-secondary" href="#">Terms</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>
-
-
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
       
   </body>
 </html>
