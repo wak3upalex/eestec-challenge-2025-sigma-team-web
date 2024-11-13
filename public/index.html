@@ -15,8 +15,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Подключение своих стилей -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/background.css" rel="stylesheet">
   </head>
   <body>  
+    <canvas id="noiseCanvas"></canvas>
+    <div class="frosted-glass"></div>
     <nav class="navbar navbar-expand-lg sticky-top custom-navbar">
       <div class="container-lg"> <!-- Контейнер для отступов -->
         <a class="navbar-brand logo me-lg-5" href="/" aria-label="EC Logo">
@@ -196,7 +200,7 @@
     <style>
       /* Объявление переменных */
       :root {
-        --bs-body-bg: #113B60;
+        --bs-body-bg: None;
         --bs-secondary-color: #ECF7FD;
       }
 
@@ -221,12 +225,6 @@
       h1, h2, h3, h4, h5, h6, p, a, div {
         font-family: Roboto Condensed !important;
         color: var(--bs-secondary-color) !important;
-      }
-      /* Стилизация навигационного */
-      .sticky-top {
-        background-color: var(--bs-body-bg);
-        border-bottom: 4px solid #0E83D7;
-        padding: 0;
       }
       /* Медиазапросы */
       @media (min-width: 768px) {
@@ -253,7 +251,8 @@
       }
 
     </style>
-
+    
+    <script src="js/white-noise.js"></script>
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     

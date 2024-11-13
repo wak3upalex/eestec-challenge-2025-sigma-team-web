@@ -1,7 +1,8 @@
 .custom-navbar {
-  background-color: var(--bs-body-bg); /* Задний фон */
-  border-bottom: 4px solid #0E83D7; /* Синяя полоса */
+  background-color: #113b60; /* Задний фон */
+  border-bottom: 4px solid #0e83d7; /* Синяя полоса */
 }
+
 
 .custom-navbar .navbar-brand.logo img {
   height: 95px;
@@ -16,7 +17,7 @@
 
 .custom-navbar .navbar-nav .nav-link:hover,
 .custom-navbar .navbar-nav .nav-link.active {
-  color: #0E83D7;
+  color: #0e83d7;
 }
 
 /* Адаптивные стили */
