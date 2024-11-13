@@ -17,22 +17,28 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>  
-    <nav class="navbar navbar-expand d-flex justify-content-around  sticky-top">
-      <a class="py-3 logo" href="#" aria-label="EC Logo">
-        <img src="./img/EC Logo.svg" alt="EC Logo">
-      </a>
-      <ul class="navbar-nav d-flex align-items-center gap-4">
-        <!-- Для ссылок не забудьте hover прописать и active -->
-        <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">О хакатоне</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Тематика этого года</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Организаторы</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Партнеры</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">ЧаВо</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg sticky-top custom-navbar">
+      <div class="container-lg"> <!-- Контейнер для отступов -->
+        <a class="navbar-brand logo me-lg-5" href="/" aria-label="EC Logo">
+          <img src="./img/EC Logo.svg" alt="EC Logo">
+        </a>
+        <button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end ms-lg-5" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">О хакатоне</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Тематика этого года</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Организаторы</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Партнеры</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">ЧаВо</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
-    <header class="container position-relactive">
+    <header class="container position-relative">
       <img class="daimond overflow-x-hidden position-absolute  start-0" src="./img/daimond.svg" alt="#" style="transform: rotate(-15deg); width: 310px;">
       <img class="daimond overflow-x-hidden  position-absolute end-0 " src="./img/daimond.svg" alt="#" style="transform: rotate(15deg); width: 355px;">
       <h1 class="text-center"><span>#</span>ReadyForThe<span>Challange?</span></h1>
@@ -117,7 +123,7 @@
               <a class="d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-controls="collapseExample1" aria-expanded="false">
                 Как будет проходить хакатон<p>+</p>
               </a>
-              <div class="collapse" id="collapseExample1">
+              <div class="collapse" id="collapseExample1" data-bs-parent=".first_faq">
                 24 часов ты пишешь код, работаешь в команде единомышленников, общаясь с потенциальными работодателями из ІТ компаний-партнеров.
               </div>
             </div>
@@ -125,14 +131,14 @@
               <a class="d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-controls="collapseExample2" aria-expanded="false">
                 Предоставляете ли вы оборудование?<p>+</p>
               </a>
-              <div class="collapse" id="collapseExample2">
+              <div class="collapse" id="collapseExample2" data-bs-parent=".first_faq">
                 Оборудование мы не предоставляем. Но надеемся, что у всех будет возможность использовать использовать личные ноутбуки.              </div>
             </div>
             <div class="faq_item px-4">
               <a class="d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-controls="collapseExample3" aria-expanded="false">
                 Я могу участвовать один?<p>+</p>
               </a>
-              <div class="collapse" id="collapseExample3">
+              <div class="collapse" id="collapseExample3" data-bs-parent=".first_faq">
                 24 часов ты пишешь код, работаешь в команде единомышленников, общаясь с потенциальными работодателями из ІТ компаний-партнеров.
               </div>
             </div>
@@ -142,7 +148,7 @@
               <a class="d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-controls="collapseExample4" aria-expanded="false">
                 Где посмотреть отборочные задания?<p>+</p>
               </a>
-              <div class="collapse" id="collapseExample4">
+              <div class="collapse" id="collapseExample4" data-bs-parent=".second_faq">
                 Отборочное задание появится 9.11 после регистрации на сайте и заполнения заявки.
               </div>
             </div>
@@ -150,7 +156,7 @@
               <a class="d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-controls="collapseExample5" aria-expanded="false">
                 Сколько стоит участие?<p>+</p>
               </a>
-              <div class="collapse" id="collapseExample5">
+              <div class="collapse" id="collapseExample5" data-bs-parent=".second_faq">
                 Участие в Хакатоне абсолютно бесплатно для всех.
               </div>
             </div>
@@ -158,7 +164,7 @@
               <a class="d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-controls="collapseExample6" aria-expanded="false">
                 Будут ли призы?<p>+</p>
               </a>
-              <div class="collapse" id="collapseExample6">
+              <div class="collapse" id="collapseExample6" data-bs-parent=".second_faq">
                 24 часов ты пишешь код, работаешь в команде единомышленников, общаясь с потенциальными работодателями из ІТ компаний-партнеров.
               </div>
             </div>
