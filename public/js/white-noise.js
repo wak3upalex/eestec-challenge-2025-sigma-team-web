@@ -9,7 +9,8 @@ const particleColors = ['#52BDE9', '#036CAD', '#52BDE9']; // Particle colors
 // Resize canvas and instantly fill the canvas with new particles
 function resizeCanvas() {
     width = window.innerWidth;
-    height = window.innerHeight;
+    height = document.documentElement.scrollHeight; // Устанавливаем высоту канваса по всей высоте документа
+
     canvas.width = width;
     canvas.height = height;
 
@@ -19,8 +20,6 @@ function resizeCanvas() {
         particles.push(createParticle(true)); // Create fully visible particles
     }
 }
-window.addEventListener('resize', resizeCanvas);
-resizeCanvas();
 
 // Generate a new particle
 function createParticle(instantVisible = false) {
@@ -82,5 +81,7 @@ function animate() {
     requestAnimationFrame(animate);
 }
 
-// Start animation
+// Запуск анимации и корректировка размеров при изменении размеров окна
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas();
 animate();
