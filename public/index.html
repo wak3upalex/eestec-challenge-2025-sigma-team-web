@@ -17,6 +17,8 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/navbar.css" rel="stylesheet">
     <link href="css/background.css" rel="stylesheet">
+    <!-- Границы объектов из bootstrap для отладки -->
+    <link href="css/debug.css" rel="stylesheet">
   </head>
   <body>  
     <canvas id="noiseCanvas"></canvas>
@@ -42,33 +44,38 @@
       </div>
     </nav>
 
-    <header class="container position-relative">
-      <img class="daimond overflow-x-hidden position-absolute  start-0" src="./img/daimond.svg" alt="#" style="transform: rotate(-15deg); width: 310px;">
-      <img class="daimond overflow-x-hidden  position-absolute end-0 " src="./img/daimond.svg" alt="#" style="transform: rotate(15deg); width: 355px;">
-      <h1 class="text-center"><span>#</span>ReadyForThe<span>Challange?</span></h1>
-      <div>
-        <p class="text-center">Регистрируйся на локальный раунд хакатона <b>EESTech Challenge</b><br> и прими участие <b>в крупнейшем соревновании для<br>студентов-инженеров в Европе!</b></p>
-        <div class="d-flex justify-content-center">
-          <button class="btn btn-primary">Регистрация<img src="./img/arrow.svg"></button>
-        </div>
-      </div>
-      <div>
-        <div class="lower d-flex justify-content-center">
-          <div class="lower_item d-flex flex-column">
-            <h3 class="text-center">200k</h3>
-            <p>Призовой фонд</p>
-          </div>
-          <div class="lower_item d-flex flex-column">
-            <h3 class="text-center">200+</h3>
-            <p>Участников в прошлом году</p>
-          </div>
-          <div class="lower_item d-flex flex-column">
-            <h3 class="text-center">20+</h3>
-            <p>Команд в прошлом году</p>
-          </div>
-          <div class="lower_item d-flex flex-column">
-            <h3 class="text-center">4</h3>
-            <p>Года проводится хакатон</p>
+    <header class="vh-100 d-flex align-items-center position-relative">
+      <div class="container-lg text-center">
+        <div class="row h-100 align-items-center">
+          <div class="col-12">
+            <img class="daimond overflow-x-hidden position-absolute start-0" src="./img/daimond.svg" alt="#" style="transform: rotate(-15deg); width: 310px;">
+            <img class="daimond overflow-x-hidden position-absolute end-0" src="./img/daimond.svg" alt="#" style="transform: rotate(15deg); width: 355px;">
+            <h1 class="text-center"><span>#</span>ReadyForThe<span>Challenge?</span></h1>
+            <p class="text-center">
+              Регистрируйся на локальный раунд хакатона <b>EESTech Challenge</b><br>
+              и прими участие <b>в крупнейшем соревновании для<br>студентов-инженеров в Европе!</b>
+            </p>
+            <div class="d-flex justify-content-center mt-3">
+              <button class="btn btn-primary">Регистрация <img src="./img/arrow.svg"></button>
+            </div>
+            <div class="row justify-content-center mt-5">
+              <div class="col-md-3 col-6 text-center">
+                <h3>200k</h3>
+                <p>Призовой фонд</p>
+              </div>
+              <div class="col-md-3 col-6 text-center">
+                <h3>200+</h3>
+                <p>Участников в прошлом году</p>
+              </div>
+              <div class="col-md-3 col-6 text-center">
+                <h3>20+</h3>
+                <p>Команд в прошлом году</p>
+              </div>
+              <div class="col-md-3 col-6 text-center">
+                <h3>4</h3>
+                <p>Года проводится хакатон</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
