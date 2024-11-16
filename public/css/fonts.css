@@ -11,8 +11,20 @@ header h1 {
     font-size: 600%;
 }
 header p {
-    font-size: 150%;
+    font-size: 175%;
 }
 header h3 {
     font-size: 300%;
+}
+.second-section-header {
+    font-size: 600%;
+}
+.second-section-p {
+    font-size: 175%;
+}
+.third_position_header {
+    font-size: 600%;
+}
+.third_position_p {
+    font-size: 175%;
 }
