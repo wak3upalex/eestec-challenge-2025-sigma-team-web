@@ -38,3 +38,31 @@ header h3 {
 .second-section-p {
   font-size: clamp(1rem, 2vw, 2rem);
 }
+
+.third-section-header {
+  font-size: clamp(2.5rem, 5vw, 6rem);
+}
+
+.third-section-p {
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.fourth_section_header {
+  font-size: clamp(2.5rem, 5vw, 6rem);
+}
+
+.fourth_section_p {
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.five_section_header {
+  font-size: clamp(2.5rem, 5vw, 6rem);
+}
+
+.five_section_p {
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+six_section_header {
+  font-size: clamp(2.5rem, 5vw, 6rem);
+}
