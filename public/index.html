@@ -18,6 +18,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/navbar.css" rel="stylesheet">
     <link href="css/background.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
     <!-- Границы объектов из bootstrap для отладки -->
     <link href="css/debug.css" rel="stylesheet">
   </head>
@@ -145,80 +146,123 @@
         </div>
       </section>
       <!-- Секция партнеры -->
-      <section class="container">
-        <h2 class="text-center">Партнеры</h2>
-        <div class="partners d-flex flex-column">
-          <div class="partner d-flex align-items-center">
-            <img src="./img/partner.svg" alt>
-            <p class="text-start "><span>Lorem ipsum </span>– dolor sit amet, consectetur adipiscing elit. Mauris fermentum nunc a purus pulvinar, sit amet efficitur erat consequat. Nam sed enim non metus iaculis blandit. </p>
+      <section class="container my-5">
+        <div class="row justify-content-center">
+          <!-- Заголовок -->
+          <div class="col-12">
+            <h2 class="text-center">Партнеры</h2>
           </div>
-          <div class="partner d-flex flex-row-reverse align-items-center">
-            <img src="./img/partner.svg" alt>
-            <p class="text-start "><span>Lorem ipsum </span>– dolor sit amet, consectetur adipiscing elit. Mauris fermentum nunc a purus pulvinar, sit amet efficitur erat consequat. Nam sed enim non metus iaculis blandit. </p>
+        </div>
+        <!-- Партнеры -->
+        <div class="row align-items-center my-2">
+          <div class="col-md-4 text-center">
+            <img class="img-fluid partner-img" src="./img/partner.svg" alt="#">
           </div>
-          <div class="partner d-flex align-items-center">
-            <img src="./img/partner.svg" alt>
-            <p class="text-start "><span>Lorem ipsum </span>– dolor sit amet, consectetur adipiscing elit. Mauris fermentum nunc a purus pulvinar, sit amet efficitur erat consequat. Nam sed enim non metus iaculis blandit. </p>
+          <div class="col-md-8">
+            <p class="text-start">
+              <span>Lorem ipsum</span> – dolor sit amet, consectetur adipiscing elit. Mauris fermentum nunc a purus pulvinar, sit amet efficitur erat consequat. Nam sed enim non metus iaculis blandit.
+            </p>
+          </div>
+        </div>
+        <div class="row align-items-center my-2 flex-row-reverse">
+          <div class="col-md-4 text-center">
+            <img class="img-fluid partner-img" src="./img/partner.svg" alt="#">
+          </div>
+          <div class="col-md-8">
+            <p class="text-start">
+              <span>Lorem ipsum</span> – dolor sit amet, consectetur adipiscing elit. Mauris fermentum nunc a purus pulvinar, sit amet efficitur erat consequat. Nam sed enim non metus iaculis blandit.
+            </p>
+          </div>
+        </div>
+        <div class="row align-items-center my-2">
+          <div class="col-md-4 text-center">
+            <img class="img-fluid partner-img" src="./img/partner.svg" alt="#">
+          </div>
+          <div class="col-md-8">
+            <p class="text-start">
+              <span>Lorem ipsum</span> – dolor sit amet, consectetur adipiscing elit. Mauris fermentum nunc a purus pulvinar, sit amet efficitur erat consequat. Nam sed enim non metus iaculis blandit.
+            </p>
           </div>
         </div>
       </section>
       <!-- СЕКЦИЯ ЧаВО -->
-      <section class="container">
-        <h2><span>Ча</span>сто задаваемые <span>во</span>просы</h2>
-        <div class="faq d-flex flex-wrap flex-row w-100">
-          <div class="faq d-flex flex-wrap flex-column" style="flex: 1 1 50%">
-            <div class="faq_item px-4">
-              <a class="d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-controls="collapseExample1" aria-expanded="false">
-                Как будет проходить хакатон<p>+</p>
-              </a>
-              <div class="collapse" id="collapseExample1" data-bs-parent=".faq">
-                24 часов ты пишешь код, работаешь в команде единомышленников, общаясь с потенциальными работодателями из ІТ компаний-партнеров.
+      <section class="container my-5">
+        <div class="row">
+          <!-- Левый столбец -->
+          <div class="col-md-6">
+            <div class="faq_item">
+              <button class="faq_button" data-bs-target="#collapse1" data-bs-toggle="collapse" type="button" aria-controls="collapse1" aria-expanded="false">
+                Как будет проходить хакатон
+                <span class="toggle-icon">+</span>
+              </button>
+              <div class="collapse" id="collapse1" data-bs-parent="#faqGroup">
+                <p class="mt-3">
+                  24 часов ты пишешь код, работаешь в команде единомышленников, общаясь с потенциальными работодателями из ІТ компаний-партнеров.
+                </p>
               </div>
             </div>
-            <div class="faq_item px-4">
-              <a class="d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-controls="collapseExample2" aria-expanded="false">
-                Предоставляете ли вы оборудование?<p>+</p>
-              </a>
-              <div class="collapse" id="collapseExample2" data-bs-parent=".faq">
-                Оборудование мы не предоставляем. Но надеемся, что у всех будет возможность использовать использовать личные ноутбуки.              </div>
+            <div class="faq_item">
+              <button class="faq_button" data-bs-target="#collapse2" data-bs-toggle="collapse" type="button" aria-controls="collapse2" aria-expanded="false">
+                Предоставляете ли вы оборудование?
+                <span class="toggle-icon">+</span>
+              </button>
+              <div class="collapse" id="collapse2" data-bs-parent="#faqGroup">
+                <p class="mt-3">
+                  Оборудование мы не предоставляем. Но надеемся, что у всех будет возможность использовать личные ноутбуки.
+                </p>
+              </div>
             </div>
-            <div class="faq_item px-4">
-              <a class="d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-controls="collapseExample3" aria-expanded="false">
-                Я могу участвовать один?<p>+</p>
-              </a>
-              <div class="collapse" id="collapseExample3" data-bs-parent=".faq">
-                24 часов ты пишешь код, работаешь в команде единомышленников, общаясь с потенциальными работодателями из ІТ компаний-партнеров.
+            <div class="faq_item">
+              <button class="faq_button" data-bs-target="#collapse3" data-bs-toggle="collapse" type="button" aria-controls="collapse3" aria-expanded="false">
+                Я могу участвовать один?
+                <span class="toggle-icon">+</span>
+              </button>
+              <div class="collapse" id="collapse3" data-bs-parent="#faqGroup">
+                <p class="mt-3">
+                  Да, участие одного участника возможно, но работа в команде дает больше преимуществ.
+                </p>
               </div>
             </div>
           </div>
-          <div class="faq d-flex flex-wrap flex-column" style="flex: 1 1 50%">
-            <div class="faq_item px-4">
-              <a class="d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-controls="collapseExample4" aria-expanded="false">
-                Где посмотреть отборочные задания?<p>+</p>
-              </a>
-              <div class="collapse" id="collapseExample4" data-bs-parent=".faq">
-                Отборочное задание появится 9.11 после регистрации на сайте и заполнения заявки.
+          <!-- Правый столбец -->
+          <div class="col-md-6">
+            <div class="faq_item">
+              <button class="faq_button" data-bs-target="#collapse4" data-bs-toggle="collapse" type="button" aria-controls="collapse4" aria-expanded="false">
+                Где посмотреть отборочные задания?
+                <span class="toggle-icon">+</span>
+              </button>
+              <div class="collapse" id="collapse4" data-bs-parent="#faqGroup">
+                <p class="mt-3">
+                  Отборочное задание появится 9.11 после регистрации на сайте и заполнения заявки.
+                </p>
               </div>
             </div>
-            <div class="faq_item px-4">
-              <a class="d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-controls="collapseExample5" aria-expanded="false">
-                Сколько стоит участие?<p>+</p>
-              </a>
-              <div class="collapse" id="collapseExample5" data-bs-parent=".faq">
-                Участие в Хакатоне абсолютно бесплатно для всех.
+            <div class="faq_item">
+              <button class="faq_button" data-bs-target="#collapse5" data-bs-toggle="collapse" type="button" aria-controls="collapse5" aria-expanded="false">
+                Сколько стоит участие?
+                <span class="toggle-icon">+</span>
+              </button>
+              <div class="collapse" id="collapse5" data-bs-parent="#faqGroup">
+                <p class="mt-3">
+                  Участие в Хакатоне абсолютно бесплатно для всех.
+                </p>
               </div>
             </div>
-            <div class="faq_item px-4">
-              <a class="d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-controls="collapseExample6" aria-expanded="false">
-                Будут ли призы?<p>+</p>
-              </a>
-              <div class="collapse" id="collapseExample6" data-bs-parent=".faq">
-                24 часов ты пишешь код, работаешь в команде единомышленников, общаясь с потенциальными работодателями из ІТ компаний-партнеров.
+            <div class="faq_item">
+              <button class="faq_button" data-bs-target="#collapse6" data-bs-toggle="collapse" type="button" aria-controls="collapse6" aria-expanded="false">
+                Будут ли призы?
+                <span class="toggle-icon">+</span>
+              </button>
+              <div class="collapse" id="collapse6" data-bs-parent="#faqGroup">
+                <p class="mt-3">
+                  Да, будут ценные призы и возможность пройти стажировку у партнеров.
+                </p>
               </div>
             </div>
           </div>
         </div>
-    </section></main>
+      </section>
+  </main>
     <footer class="container d-flex flex-column">
       <a class="text-center" href="#">
         <img src="./img/EC logo footer.png" alt="#" style="object-fit: contain; height: 235px;">
@@ -240,61 +284,6 @@
         <p class="text-center">© 2024 EESTEC LC St. Petersburg</p>
       </div>
     </footer>
-
-    <style>
-      /* Объявление переменных */
-      :root {
-        --bs-body-bg: None;
-        --bs-secondary-color: #ECF7FD;
-      }
-
-      a {
-        text-decoration: none;
-      }
-
-      /* 2 типа контейнеров в шаблоне */
-      .container {
-        max-width: 1475px;
-      }
-      .container-md {
-        max-width: 1720px;
-      }
-      /* Делаем чтоб картинки не ломались */
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-
-      /* Стилизация текста */
-      h1, h2, h3, h4, h5, h6, p, a, div {
-        font-family: Roboto Condensed !important;
-        color: var(--bs-secondary-color) !important;
-      }
-      /* Медиазапросы */
-      @media (min-width: 768px) {
-        .flex-md-equal > * {
-          flex: 1 !important;
-        }
-      }
-
-      @media (max-width: 878px) {
-        .navbar-nav {
-          display: none !important;
-        }
-        .partner{
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: center;
-        }
-        .faq {
-          flex-direction: column !important;
-        }
-        .daimond {
-          display: none;
-        }
-      }
-
-    </style>
     
     <script src="js/white-noise.js"></script>
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
