@@ -5,8 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "start public/index.html",
-        "build-css": "node-sass css/ -o dist/css",
-        "build": "webpack"
+        "build-css": "node-sass css/ -o dist/css"
     },
     "dependencies": {
         "bootstrap": "^5.3.3"
