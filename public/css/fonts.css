@@ -3,3 +3,16 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.backgroung-gradient {
+    background: linear-gradient(to right, #49b6e7, #036cad);
+    /* border-radius: 35%; */
+}
+header h1 {
+    font-size: 600%;
+}
+header p {
+    font-size: 150%;
+}
+header h3 {
+    font-size: 300%;
+}
