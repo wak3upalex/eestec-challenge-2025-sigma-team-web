@@ -63,6 +63,6 @@ header h3 {
   font-size: clamp(1rem, 2vw, 2rem);
 }
 
-six_section_header {
-  font-size: clamp(2.5rem, 5vw, 6rem);
+.six_section_header {
+  font-size: clamp(2.5rem, 5vw, 5.5rem);
 }
