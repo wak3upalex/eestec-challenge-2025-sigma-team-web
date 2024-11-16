@@ -1,0 +1,68 @@
+body {
+    color: white;
+}
+.gradient-text {
+  background: linear-gradient(to bottom, #49b6e7, #036cad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.background-gradient {
+  background: linear-gradient(to right, #49b6e7, #036cad);
+}
+
+header h1 {
+  font-size: clamp(
+    2.5rem,
+    5vw,
+    6rem
+  ); /* Минимум 2.5rem, масштабируется до 6rem */
+}
+
+header p {
+  font-size: clamp(1rem, 2vw, 2rem); /* Минимум 1rem, масштабируется до 2rem */
+}
+
+header h3 {
+  font-size: clamp(
+    1.5rem,
+    3vw,
+    4rem
+  ); /* Минимум 1.5rem, масштабируется до 4rem */
+}
+
+.second-section-header {
+  font-size: clamp(2.5rem, 5vw, 6rem);
+}
+
+.second-section-p {
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.third-section-header {
+  font-size: clamp(2.5rem, 5vw, 6rem);
+}
+
+.third-section-p {
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.fourth_section_header {
+  font-size: clamp(2.5rem, 5vw, 6rem);
+}
+
+.fourth_section_p {
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.five_section_header {
+  font-size: clamp(2.5rem, 5vw, 6rem);
+}
+
+.five_section_p {
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.six_section_header {
+  font-size: clamp(2.5rem, 5vw, 5.5rem);
+}

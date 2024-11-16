@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content>
+    <meta name="author" content="IT Sigma">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>EESTech Challenge</title>
+    <link type="image/png" href="img/cropped-Logo-blue-1-192x192.png" rel="icon">
+    <!-- Подключение bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Выгрузка шрифта-->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Подключение своих стилей -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/background.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <!-- Границы объектов из bootstrap для отладки -->
+    <!-- <link href="css/debug.css" rel="stylesheet"> -->
+  </head>
+  <body>  
+    <canvas id="noiseCanvas"></canvas>
+    <div class="frosted-glass"></div>
+    <nav class="navbar navbar-expand-lg sticky-top custom-navbar">
+      <div class="container-lg custom-container"> <!-- Контейнер для отступов -->
+        <a class="navbar-brand logo me-lg-5" href="/" aria-label="EC Logo">
+          <img src="./img/EC Logo.svg" alt="EC Logo">
+        </a>
+        <button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end ms-lg-5" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">О хакатоне</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Тематика этого года</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Организаторы</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Партнеры</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">ЧаВо</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="vh-100 d-flex align-items-center position-relative">
+      <div class="container-lg custom-container">
+        <!-- Строка заголовка -->
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <h1 class="text-center"><span class="gradient-text">#</span>ReadyForThe<span class="gradient-text">Challenge?</span></h1>
+          </div>
+        </div>
+        <!-- Строка с текстом, кнопкой и алмазами -->
+        <div class="row align-items-center position-relative my-4">
+          <!-- Левый алмаз -->
+          <div class="col-md-2 d-none d-md-block position-relative overflow-visible">
+            <img class="position-absolute top-50 start-0 pb-5" src="./img/daimond.svg" alt="#" style="transform: translateY(-50%)  rotate(-15deg); width: 100%;">
+          </div>
+          <!-- Основной контент -->
+          <div class="col-md-8 col-12 text-center">
+            <p class="mb-4">
+              Регистрируйся на локальный раунд хакатона <b>EESTech Challenge</b><br>
+              и прими участие <b>в крупнейшем соревновании для<br>студентов-инженеров в Европе!</b>
+            </p>
+            <button class="btn btn-primary background-gradient">Регистрация <img src="./img/arrow.svg" alt="arrow"></button>
+          </div>
+          <!-- Правый алмаз -->
+          <div class="col-md-2 d-none d-md-block position-relative overflow-visible">
+            <img class="position-absolute top-50 end-0 mt-5" src="./img/daimond.svg" alt="#" style="transform: translateY(-50%)  rotate(15deg); width: 100%;">
+          </div>
+        </div>
+        <!-- Строка со статистикой -->
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-2 col-4 text-center mb-3 mb-md-0">
+            <h3 class="gradient-text">200k</h3>
+            <p>Призовой фонд</p>
+          </div>
+          <div class="col-md-2 col-4 text-center mb-3 mb-md-0">
+            <h3 class="gradient-text">200+</h3>
+            <p>Участников в прошлом году</p>
+          </div>
+          <div class="col-md-2 col-4 text-center">
+            <h3 class="gradient-text">20+</h3>
+            <p>Команд в прошлом году</p>
+          </div>
+          <div class="col-md-2 col-4 text-center">
+            <h3 class="gradient-text">4</h3>
+            <p>Года проводится хакатон</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Секция о хакатоне -->
+      <div class="vh-100 d-flex align-items-center position-relative">
+        <div class="container-lg custom-container position-relative">
+          <div class="row d-flex align-items-center m-md-auto">
+            <div class="col-md-8 text-start">
+              <h1 class="text-start second-section-header">Про <span class="gradient-text">EESTech Challenge</span></h1>
+              <p class="text-start second-section-p">
+                EESTech Challenge или EESTEC Technology Challenge — это ежегодные международные студенческие соревнования, организуемые EESTEC. Его цель – создать возможности для европейских студентов получить знания и практический опыт в области электротехники и информатики, а также развивать профессиональные сети. Тема конкурса EESTech Challenge меняется каждый год и раскрывается на церемонии открытия. Конкурс разделен на несколько локальных раундов, которые организуются различными комитетами EESTEC по всей Европе. Команда-победитель каждого локального раунда затем переходит в финальный раунд! Конкурс завершается церемонией закрытия.
+              </p>
+            </div>
+            <div class="col-md-4 d-flex align-items-center position-relative overflow-visible" style="aspect-ratio: 4/3;">
+              <img class="daimond position-absolute top-50" src="./img/daimond.svg" alt="#" style="transform: translateY(-50%) rotate(15deg); width: 700px; right: -30%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Тема хакатона -->
+       <div class="vh-100 d-flex align-items-center position-relative">
+        <div class="container-lg custom-container position-relative">
+          <div class="row d-flex align-items-center m-md-auto">
+            <div class="col-md-5 d-flex align-items-center position-relative overflow-visible" style="aspect-ratio: 4/3;">
+              <img class="daimond position-absolute top-50" src="./img/daimond.svg" alt="#" style="transform: translateY(-50%) rotate(-15deg); width: 700px;">
+            </div>
+            <div class="col-md-7 text-start">
+              <h2 class="text-end third-section-header">Тематика этого года -<span class="gradient-text"> Electrical Circuit for Industry 4.0</span></h2>
+              <p class="text-end third-section-p">EESTech Challenge или EESTEC Technology Challenge — это ежегодные международные студенческие соревнования, организуемые EESTEC. Его цель – создать возможности для европейских студентов получить знания и практический опыт в области электротехники и информатики, а также развивать профессиональные сети. Тема конкурса EESTech Challenge меняется каждый год и раскрывается на церемонии открытия. </p>
+            <button class="btn btn-primary me-0 ms-auto d-block background-gradient">Подробнее<img src="./img/arrow.svg" alt="#"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Секция организаторы -->
+      <section class="vh-100 d-flex align-items-center position-relative">
+        <div class="container-lg position-relative">
+          <!-- Заголовок -->
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <h2 class="text-center fourth_section_header">Организаторы</h2>
+            </div>
+          </div>
+          <!-- Фотографии "аркой" -->
+          <div class="row justify-content-center my-2 position-relative flex-nowrap">
+            <div class="col position-relative">
+              <img class="img position-absolute" src="./img/Rectangle 58.png" alt="#" style="transform: rotate(-15deg) translateY(20%);">
+            </div>
+            <div class="col position-relative justify-content-center" style="aspect-ratio: 5/3;">
+              <img class="img position-absolute" src="./img/Rectangle 59.png" alt="#" style="z-index: 2;">
+            </div>
+            <div class="col position-relative">
+              <img class="img position-absolute" src="./img/Rectangle 60.png" alt="#" style="transform: rotate(15deg) translateY(20%);">
+            </div>
+          </div>
+          <!-- Текст -->
+          <div class="row justify-content-center mt-5 mt-md-0">
+            <div class="col-md-5 text-center">
+              <p class="fourth_section_p  ">
+                Electrical Engineering STudents' European assoCiation — это международная организация, находящаяся в более чем 20 городах Европы! EESTEC объединяет в себе студентов-энергетиков и программистов, а сообщество в Санкт-Петербурге ему с этим помогает.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Секция партнеры -->
+      <section class="container my-5">
+        <div class="row justify-content-center">
+          <!-- Заголовок -->
+          <div class="col-12">
+            <h2 class="text-center five_section_header">Партнеры</h2>
+          </div>
+        </div>
+        <!-- Партнеры -->
+        <div class="row align-items-center my-2">
+          <div class="col-md-4 text-center">
+            <img class="img-fluid partner-img" src="./img/partner.svg" alt="#">
+          </div>
+          <div class="col-md-8">
+            <p class="text-start five_section_p">
+              <span class="gradient-text">Lorem ipsum</span> – dolor sit amet, consectetur adipiscing elit. Mauris fermentum nunc a purus pulvinar, sit amet efficitur erat consequat. Nam sed enim non metus iaculis blandit.
+            </p>
+          </div>
+        </div>
+        <div class="row align-items-center my-2 flex-row-reverse">
+          <div class="col-md-4 text-center">
+            <img class="img-fluid partner-img" src="./img/partner.svg" alt="#">
+          </div>
+          <div class="col-md-8">
+            <p class="text-start five_section_p">
+              <span class="gradient-text">Lorem ipsum</span> – dolor sit amet, consectetur adipiscing elit. Mauris fermentum nunc a purus pulvinar, sit amet efficitur erat consequat. Nam sed enim non metus iaculis blandit.
+            </p>
+          </div>
+        </div>
+        <div class="row align-items-center my-2">
+          <div class="col-md-4 text-center">
+            <img class="img-fluid partner-img" src="./img/partner.svg" alt="#">
+          </div>
+          <div class="col-md-8">
+            <p class="text-start five_section_p">
+              <span class="gradient-text">Lorem ipsum</span> – dolor sit amet, consectetur adipiscing elit. Mauris fermentum nunc a purus pulvinar, sit amet efficitur erat consequat. Nam sed enim non metus iaculis blandit.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- СЕКЦИЯ ЧаВО -->
+      <section class="container my-5">
+        <div class="row justify-content-center m-5">
+          <!-- Заголовок -->
+          <div class="col-12">
+            <h2 class="text-center six_section_header"><span class="gradient-text">Ча</span>сто задаваемые <span class="gradient-text">во</span>просы</h2>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Левый столбец -->
+          <div class="col-md-6">
+            <div class="faq_item">
+              <button class="faq_button" data-bs-target="#collapse1" data-bs-toggle="collapse" type="button" aria-controls="collapse1" aria-expanded="false">
+                Как будет проходить хакатон
+                <span class="toggle-icon">+</span>
+              </button>
+              <div class="collapse" id="collapse1" data-bs-parent="#faqGroup">
+                <p class="mt-3">
+                  24 часов ты пишешь код, работаешь в команде единомышленников, общаясь с потенциальными работодателями из ІТ компаний-партнеров.
+                </p>
+              </div>
+            </div>
+            <div class="faq_item">
+              <button class="faq_button" data-bs-target="#collapse2" data-bs-toggle="collapse" type="button" aria-controls="collapse2" aria-expanded="false">
+                Предоставляете ли вы оборудование?
+                <span class="toggle-icon">+</span>
+              </button>
+              <div class="collapse" id="collapse2" data-bs-parent="#faqGroup">
+                <p class="mt-3">
+                  Оборудование мы не предоставляем. Но надеемся, что у всех будет возможность использовать личные ноутбуки.
+                </p>
+              </div>
+            </div>
+            <div class="faq_item">
+              <button class="faq_button" data-bs-target="#collapse3" data-bs-toggle="collapse" type="button" aria-controls="collapse3" aria-expanded="false">
+                Я могу участвовать один?
+                <span class="toggle-icon">+</span>
+              </button>
+              <div class="collapse" id="collapse3" data-bs-parent="#faqGroup">
+                <p class="mt-3">
+                  Да, участие одного участника возможно, но работа в команде дает больше преимуществ.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Правый столбец -->
+          <div class="col-md-6">
+            <div class="faq_item">
+              <button class="faq_button" data-bs-target="#collapse4" data-bs-toggle="collapse" type="button" aria-controls="collapse4" aria-expanded="false">
+                Где посмотреть отборочные   ния?
+                <span class="toggle-icon">+</span>
+              </button>
+              <div class="collapse" id="collapse4" data-bs-parent="#faqGroup">
+                <p class="mt-3">
+                  Отборочное задание появится 9.11 после регистрации на сайте и заполнения заявки.
+                </p>
+              </div>
+            </div>
+            <div class="faq_item">
+              <button class="faq_button" data-bs-target="#collapse5" data-bs-toggle="collapse" type="button" aria-controls="collapse5" aria-expanded="false">
+                Сколько стоит участие?
+                <span class="toggle-icon">+</span>
+              </button>
+              <div class="collapse" id="collapse5" data-bs-parent="#faqGroup">
+                <p class="mt-3">
+                  Участие в Хакатоне абсолютно бесплатно для всех.
+                </p>
+              </div>
+            </div>
+            <div class="faq_item">
+              <button class="faq_button" data-bs-target="#collapse6" data-bs-toggle="collapse" type="button" aria-controls="collapse6" aria-expanded="false">
+                Будут ли призы?
+                <span class="toggle-icon">+</span>
+              </button>
+              <div class="collapse" id="collapse6" data-bs-parent="#faqGroup">
+                <p class="mt-3">
+                  Да, будут ценные призы и возможность пройти стажировку у партнеров.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container-lg custom-container py-5">
+        <!-- Логотип -->
+        <div class="row justify-content-center mb-4">
+          <div class="col-12 text-center">
+            <a href="#">
+              <img src="./img/EC logo footer.png" alt="EC Logo" style="object-fit: contain; height: 200px;">
+            </a>
+          </div>
+        </div>
+        <!-- Навигация -->
+        <div class="row justify-content-center mb-4">
+          <div class="col-md-8">
+            <nav class="d-flex justify-content-center">
+              <ul class="navbar-nav d-flex flex-row gap-4">
+                <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">О хакатоне</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Тематика этого года</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Организаторы</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- Социальные сети -->
+        <div class="row justify-content-center mb-3">
+          <div class="col-md-4 text-center">
+            <div class="d-flex justify-content-center gap-3">
+              <a href="#"><img src="./img/tg.svg" alt="Telegram" style="width: 40px;"></a>
+              <a href="#"><img src="./img/vk.svg" alt="VK" style="width: 40px;"></a>
+              <a href="#"><img src="./img/email.svg" alt="Email" style="width: 40px;"></a>
+            </div>
+          </div>
+        </div>
+        <!-- Подпись -->
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <p class="mb-0">© 2024 EESTEC LC St. Petersburg</p>
+          </div>
+        </div>
+      </footer>
+    
+    <script src="js/white-noise.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+      
+  </body>
+</html>

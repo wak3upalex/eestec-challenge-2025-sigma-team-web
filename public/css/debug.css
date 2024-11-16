@@ -1,0 +1,102 @@
+/* Общие стили для отладки */
+* {
+  outline: 1px dashed rgba(0, 0, 0, 0.1); /* Общий контур для всех элементов */
+}
+
+/* Сетка */
+[class*="container"] {
+  outline: 2px solid rgba(0, 128, 0, 0.5); /* Зеленая рамка */
+  background-color: rgba(0, 128, 0, 0.1); /* Светло-зеленый фон */
+}
+
+[class*="row"] {
+  outline: 2px solid rgba(0, 0, 255, 0.5); /* Синяя рамка */
+  background-color: rgba(0, 0, 255, 0.1); /* Светло-синий фон */
+}
+
+[class*="col"] {
+  outline: 1px dashed rgba(255, 0, 0, 0.5); /* Красная пунктирная рамка */
+  background-color: rgba(255, 0, 0, 0.1); /* Светло-красный фон */
+}
+
+/* Кнопки */
+.btn {
+  outline: 2px solid rgba(255, 165, 0, 0.5); /* Оранжевая рамка */
+  background-color: rgba(255, 165, 0, 0.1); /* Светло-оранжевый фон */
+}
+
+/* Карточки */
+.card {
+  outline: 2px solid rgba(0, 255, 255, 0.5); /* Голубая рамка */
+  background-color: rgba(0, 255, 255, 0.1); /* Светло-голубой фон */
+}
+
+.card-header {
+  outline: 2px dashed rgba(0, 128, 128, 0.5); /* Зеленовато-синяя пунктирная рамка */
+}
+
+.card-body {
+  outline: 2px solid rgba(128, 0, 128, 0.5); /* Фиолетовая рамка */
+  background-color: rgba(128, 0, 128, 0.1); /* Светло-фиолетовый фон */
+}
+
+/* Формы */
+form {
+  outline: 2px solid rgba(128, 128, 0, 0.5); /* Желто-зеленая рамка */
+  background-color: rgba(128, 128, 0, 0.1); /* Светло-желто-зеленый фон */
+}
+
+input,
+textarea,
+select {
+  outline: 2px solid rgba(0, 0, 128, 0.5); /* Темно-синяя рамка */
+  background-color: rgba(0, 0, 128, 0.1); /* Светло-синий фон */
+}
+
+label {
+  outline: 1px dashed rgba(128, 0, 0, 0.5); /* Темно-красная пунктирная рамка */
+}
+
+/* Навигация */
+.navbar {
+  outline: 2px solid rgba(255, 20, 147, 0.5); /* Розовая рамка */
+  background-color: rgba(255, 20, 147, 0.1); /* Светло-розовый фон */
+}
+
+.navbar-nav .nav-link {
+  outline: 2px dashed rgba(255, 69, 0, 0.5); /* Оранжево-красная пунктирная рамка */
+  background-color: rgba(255, 69, 0, 0.1); /* Светло-красный фон */
+}
+
+/* Таблицы */
+.table {
+  outline: 2px solid rgba(75, 0, 130, 0.5); /* Темно-фиолетовая рамка */
+  background-color: rgba(75, 0, 130, 0.1); /* Светло-фиолетовый фон */
+}
+
+.table th,
+.table td {
+  outline: 1px dashed rgba(138, 43, 226, 0.5); /* Сиреневая пунктирная рамка */
+  background-color: rgba(138, 43, 226, 0.1); /* Светло-сиреневый фон */
+}
+
+/* Модальные окна */
+.modal {
+  outline: 2px solid rgba(255, 105, 180, 0.5); /* Розовая рамка */
+  background-color: rgba(255, 105, 180, 0.1); /* Светло-розовый фон */
+}
+
+.modal-header {
+  outline: 2px dashed rgba(0, 255, 127, 0.5); /* Зеленая пунктирная рамка */
+}
+
+.modal-body {
+  outline: 2px solid rgba(255, 215, 0, 0.5); /* Золотая рамка */
+  background-color: rgba(255, 215, 0, 0.1); /* Светло-желтый фон */
+}
+
+/* Футер */
+footer {
+  outline: 2px solid rgba(0, 0, 0, 0.5); /* Черная рамка */
+  background-color: rgba(0, 0, 0, 0.1); /* Светло-черный фон */
+}
