@@ -47,37 +47,49 @@
     </nav>
 
     <header class="vh-100 d-flex align-items-center position-relative">
-      <div class="container-lg text-center">
-        <div class="row h-100 align-items-center">
+      <div class="container-lg custom-container">
+        <!-- Строка заголовка -->
+        <div class="row justify-content-center">
           <div class="col-12">
-            <img class="daimond overflow-x-hidden position-absolute start-0" src="./img/daimond.svg" alt="#" style="transform: rotate(-15deg); width: 310px;">
-            <img class="daimond overflow-x-hidden position-absolute end-0" src="./img/daimond.svg" alt="#" style="transform: rotate(15deg); width: 355px;">
             <h1 class="text-center"><span class="gradient-text">#</span>ReadyForThe<span class="gradient-text">Challenge?</span></h1>
-            <p class="text-center">
+          </div>
+        </div>
+        <!-- Строка с текстом, кнопкой и алмазами -->
+        <div class="row align-items-center position-relative my-4">
+          <!-- Левый алмаз -->
+          <div class="col-md-2 d-none d-md-block position-relative overflow-visible">
+            <img class="position-absolute top-50 start-0 pb-5" src="./img/daimond.svg" alt="#" style="transform: translateY(-50%)  rotate(-15deg); width: 100%;">
+          </div>
+          <!-- Основной контент -->
+          <div class="col-md-8 col-12 text-center">
+            <p class="mb-4">
               Регистрируйся на локальный раунд хакатона <b>EESTech Challenge</b><br>
               и прими участие <b>в крупнейшем соревновании для<br>студентов-инженеров в Европе!</b>
             </p>
-            <div class="d-flex justify-content-center mt-3">
-              <button class="btn btn-primary backgroung-gradient">Регистрация <img src="./img/arrow.svg"></button>
-            </div>
-            <div class="row justify-content-center mt-5">
-              <div class="col-md-3 col-6 text-center">
-                <h3 class="gradient-text">200k</h3>
-                <p>Призовой фонд</p>
-              </div>
-              <div class="col-md-3 col-6 text-center">
-                <h3 class="gradient-text">200+</h3>
-                <p>Участников в прошлом году</p>
-              </div>
-              <div class="col-md-3 col-6 text-center">
-                <h3 class="gradient-text">20+</h3>
-                <p>Команд в прошлом году</p>
-              </div>
-              <div class="col-md-3 col-6 text-center">
-                <h3 class="gradient-text">4</h3>
-                <p>Года проводится хакатон</p>
-              </div>
-            </div>
+            <button class="btn btn-primary backgroung-gradient">Регистрация <img src="./img/arrow.svg" alt="arrow"></button>
+          </div>
+          <!-- Правый алмаз -->
+          <div class="col-md-2 d-none d-md-block position-relative overflow-visible">
+            <img class="position-absolute top-50 end-0 mt-5" src="./img/daimond.svg" alt="#" style="transform: translateY(-50%)  rotate(15deg); width: 100%;">
+          </div>
+        </div>
+        <!-- Строка со статистикой -->
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-2 col-4 text-center mb-3 mb-md-0">
+            <h3 class="gradient-text">200k</h3>
+            <p>Призовой фонд</p>
+          </div>
+          <div class="col-md-2 col-4 text-center mb-3 mb-md-0">
+            <h3 class="gradient-text">200+</h3>
+            <p>Участников в прошлом году</p>
+          </div>
+          <div class="col-md-2 col-4 text-center">
+            <h3 class="gradient-text">20+</h3>
+            <p>Команд в прошлом году</p>
+          </div>
+          <div class="col-md-2 col-4 text-center">
+            <h3 class="gradient-text">4</h3>
+            <p>Года проводится хакатон</p>
           </div>
         </div>
       </div>
