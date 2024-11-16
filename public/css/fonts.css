@@ -2,44 +2,39 @@ body {
     color: white;
 }
 .gradient-text {
-    background: linear-gradient(to bottom, #49b6e7, #036cad);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(to bottom, #49b6e7, #036cad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.backgroung-gradient {
-    background: linear-gradient(to right, #49b6e7, #036cad);
-    /* border-radius: 35%; */
+
+.background-gradient {
+  background: linear-gradient(to right, #49b6e7, #036cad);
 }
+
 header h1 {
-    font-size: 600%;
+  font-size: clamp(
+    2.5rem,
+    5vw,
+    6rem
+  ); /* Минимум 2.5rem, масштабируется до 6rem */
 }
+
 header p {
-    font-size: 175%;
+  font-size: clamp(1rem, 2vw, 2rem); /* Минимум 1rem, масштабируется до 2rem */
 }
+
 header h3 {
-    font-size: 300%;
+  font-size: clamp(
+    1.5rem,
+    3vw,
+    4rem
+  ); /* Минимум 1.5rem, масштабируется до 4rem */
 }
+
 .second-section-header {
-    font-size: 600%;
+  font-size: clamp(2.5rem, 5vw, 6rem);
 }
+
 .second-section-p {
-    font-size: 175%;
-}
-.third_section_header {
-    font-size: 600%;
-}
-.third_section_p {
-    font-size: 175%;
-}
-.fourth_section_header {
-    font-size: 600%;
-}
-.fourth_section_p {
-    font-size: 150%;
-}
-.five_section_header {
-    font-size: 600%;
-}
-.five_section_p {
-    font-size: 160%;
+  font-size: clamp(1rem, 2vw, 2rem);
 }
