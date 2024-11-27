@@ -1,6 +1,7 @@
 from repository.user_repository import UserRepository
 from repository.utils import hash_password, verify_password
 
+
 def main():
     """Пример использования репозитория пользователей."""
     repo = UserRepository()
@@ -59,6 +60,7 @@ def main():
             print(f"Пользователь с ID '{fetched_user.id}' успешно удален.")
         else:
             print(f"Не удалось удалить пользователя с ID '{fetched_user.id}'.")
+
 
 if __name__ == "__main__":
     main()

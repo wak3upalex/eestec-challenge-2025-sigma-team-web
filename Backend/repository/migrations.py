@@ -1,14 +1,16 @@
 from peewee import Model, CharField
+
 from repository.database import db
 
-class User(Model):
-    def __init__(self,e_mail, password):
-        e_mail = CharField(unique=True)
-        self.password = CharField()
 
-      class Meta:
+class UserModel(Model):
+    email = CharField(unique=True)
+    hashed_password = CharField()
+
+    class Meta:
         database = db
         table_name = 'users'
+
 
 def migrate():
     with db:
