@@ -1,4 +1,4 @@
-rom typing import List, Optional
+from typing import List, Optional
 from peewee import IntegrityError
 
 from domain.models import User
