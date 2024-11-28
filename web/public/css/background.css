@@ -1,0 +1,29 @@
+/* Стили канваса */
+#noiseCanvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+/* Эффект замороженного стекла */
+.frosted-glass {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(90px) brightness(0.9);
+  background-color: rgba(255, 255, 255, 0);
+  pointer-events: none;
+  z-index: -1;
+}
+
+header,
+main,
+footer {
+  position: relative;
+  z-index: 1;
+}
