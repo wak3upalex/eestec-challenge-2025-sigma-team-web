@@ -1,5 +1,5 @@
 body {
-    color: white;
+  color: white;
 }
 .gradient-text {
   background: linear-gradient(to bottom, #49b6e7, #036cad);
@@ -17,6 +17,18 @@ header h1 {
     5vw,
     6rem
   ); /* Минимум 2.5rem, масштабируется до 6rem */
+}
+
+@media (max-width: 576px) {
+  .responsive-h1 {
+    font-size: clamp(
+      1.5rem,
+      4vw,
+      3rem
+    ); /* Минимум 1.5rem, масштабируется до 3rem */
+    line-height: 1.2; /* Уменьшает межстрочный интервал */
+    word-break: break-word; /* Переносит слова для избежания выхода за пределы */
+  }
 }
 
 header p {
