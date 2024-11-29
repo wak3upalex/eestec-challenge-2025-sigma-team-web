@@ -46,12 +46,12 @@
       </div>
     </nav>
 
-    <header id="main" class="vh-100 d-flex align-items-center position-relative">
+    <header class="vh-100 d-flex align-items-center position-relative" id="main">
       <div class="container-lg custom-container">
         <!-- Строка заголовка -->
         <div class="row justify-content-center">
           <div class="col-12">
-            <h1 class="text-center"><span class="gradient-text">#</span>ReadyForThe<span class="gradient-text">Challenge?</span></h1>
+            <h1 class="text-center responsive-h1"><span class="gradient-text">#</span>ReadyForThe<span class="gradient-text">Challenge?</span></h1>
           </div>
         </div>
         <!-- Строка с текстом, кнопкой и алмазами -->
@@ -96,7 +96,7 @@
     </header>
     <main>
       <!-- Секция о хакатоне -->
-      <section id="about" class="vh-100 d-flex align-items-center position-relative">
+      <section class="vh-100 d-flex align-items-center position-relative" id="about">
         <div class="container-lg custom-container position-relative">
           <div class="row d-flex align-items-center m-md-auto">
             <div class="col-md-8 text-start">
@@ -105,18 +105,18 @@
                 EESTech Challenge или EESTEC Technology Challenge — это ежегодные международные студенческие соревнования, организуемые EESTEC. Его цель – создать возможности для европейских студентов получить знания и практический опыт в области электротехники и информатики, а также развивать профессиональные сети. Тема конкурса EESTech Challenge меняется каждый год и раскрывается на церемонии открытия. Конкурс разделен на несколько локальных раундов, которые организуются различными комитетами EESTEC по всей Европе. Команда-победитель каждого локального раунда затем переходит в финальный раунд! Конкурс завершается церемонией закрытия.
               </p>
             </div>
-            <div class="col-md-4 d-flex align-items-center position-relative overflow-visible" style="aspect-ratio: 4/3;">
-              <img class="daimond position-absolute top-50" src="./img/daimond.svg" alt="#" style="transform: translateY(-50%) rotate(15deg); width: 700px; right: -30%;">
+            <div class="daimond col-md-4 d-flex align-items-center position-relative overflow-visible" style="aspect-ratio: 4/3;">
+              <img class="position-absolute top-50" src="./img/daimond.svg" alt="#" style="transform: translateY(-50%) rotate(15deg); width: 700px; right: -30%;">
             </div>
           </div>
         </div>
       </section>
       <!-- Тема хакатона -->
-       <section id="theme" class="vh-100 d-flex align-items-center position-relative">
+       <section class="vh-100 d-flex align-items-center position-relative" id="theme">
         <div class="container-lg custom-container position-relative">
           <div class="row d-flex align-items-center m-md-auto">
-            <div class="col-md-5 d-flex align-items-center position-relative overflow-visible" style="aspect-ratio: 4/3;">
-              <img class="daimond position-absolute top-50" src="./img/daimond.svg" alt="#" style="transform: translateY(-50%) rotate(-15deg); width: 700px;">
+            <div class="daimond col-md-5 d-flex align-items-center position-relative overflow-visible" style="aspect-ratio: 4/3;">
+              <img class="position-absolute top-50" src="./img/daimond.svg" alt="#" style="transform: translateY(-50%) rotate(-15deg); width: 700px;">
             </div>
             <div class="col-md-7 text-start">
               <h2 class="text-end third-section-header">Тематика этого года -<span class="gradient-text"> Electrical Circuit for Industry 4.0</span></h2>
@@ -127,7 +127,7 @@
         </div>
       </section>
       <!-- Секция организаторы -->
-      <section id="organizers" id="theme" class="vh-100 d-flex align-items-center position-relative">
+      <section class="vh-100 d-flex align-items-center position-relative" id="organizers">
         <div class="container-lg position-relative">
           <!-- Заголовок -->
           <div class="row justify-content-center">
@@ -137,13 +137,13 @@
           </div>
           <!-- Фотографии "аркой" -->
           <div class="row justify-content-center my-2 position-relative flex-nowrap">
-            <div class="col position-relative">
+            <div class="invisible_img col position-relative">
               <img class="img position-absolute" src="./img/Rectangle 58.png" alt="#" style="transform: rotate(-15deg) translateY(20%);">
             </div>
-            <div class="col position-relative justify-content-center" style="aspect-ratio: 5/3;">
+            <div class="col position-relative justify-content-center main_img" style="aspect-ratio: 5/3;">
               <img class="img position-absolute" src="./img/Rectangle 59.png" alt="#" style="z-index: 2;">
             </div>
-            <div class="col position-relative">
+            <div class="invisible_img col position-relative">
               <img class="img position-absolute" src="./img/Rectangle 60.png" alt="#" style="transform: rotate(15deg) translateY(20%);">
             </div>
           </div>
@@ -158,7 +158,7 @@
         </div>
       </section>
       <!-- Секция партнеры -->
-      <section id="partners" class="container my-5">
+      <section class="container my-5" id="partners">
         <div class="row justify-content-center">
           <!-- Заголовок -->
           <div class="col-12">
@@ -198,7 +198,7 @@
         </div>
       </section>
       <!-- СЕКЦИЯ ЧаВО -->
-      <section id="faq" class="container my-5">
+      <section class="container my-5" id="faq">
         <div class="row justify-content-center m-5">
           <!-- Заголовок -->
           <div class="col-12">
@@ -210,7 +210,7 @@
           <div class="col-md-6">
             <div class="faq_item">
               <button class="faq_button" data-bs-target="#collapse1" data-bs-toggle="collapse" type="button" aria-controls="collapse1" aria-expanded="false">
-                Как будет проходить хакатон
+                Как будет проходить хакатон?
                 <span class="toggle-icon">+</span>
               </button>
               <div class="collapse" id="collapse1" data-bs-parent="#faqGroup">
@@ -246,7 +246,7 @@
           <div class="col-md-6">
             <div class="faq_item">
               <button class="faq_button" data-bs-target="#collapse4" data-bs-toggle="collapse" type="button" aria-controls="collapse4" aria-expanded="false">
-                Где посмотреть отборочные   ния?
+                Где посмотреть отборочные   задания?
                 <span class="toggle-icon">+</span>
               </button>
               <div class="collapse" id="collapse4" data-bs-parent="#faqGroup">
