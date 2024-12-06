@@ -18,10 +18,9 @@ class UserRepository(UserRepositoryInterface):
         try:
             user = UserModel.create(email=email, hashed_password=hashed_password)
             return User(id=user.id, email=user.email, hashed_password=user.hashed_password)
-        except IntegrityError:
-            # Логирование ошибки или обработка дубликата
-            print(f"Пользователь с email '{email}' уже существует.")
-            return None
+        except IntegrityError as e:
+            print(f"Ошибка при создании пользователя: {e}")
+            raise ValueError(f"Пользователь с email '{email}' уже существует.")
 
     def get_user_by_id(self, user_id: int) -> Optional[User]:
         try:
@@ -58,9 +57,10 @@ class UserRepository(UserRepositoryInterface):
             if rows_updated:
                 return self.get_user_by_id(user_id)
             return None
-        except IntegrityError:
-            print(f"Не удалось обновить пользователя с ID '{user_id}'. Возможно, email '{email}' уже используется.")
-            return None
+        except IntegrityError as e:
+            print(f"Ошибка при обновлении пользователя с ID '{user_id}': {e}")
+            raise ValueError(
+                f"Не удалось обновить пользователя с ID '{user_id}'. Возможно, email '{email}' уже используется.")
 
     def delete_user(self, user_id: int) -> bool:
         rows_deleted = UserModel.delete().where(UserModel.id == user_id).execute()
